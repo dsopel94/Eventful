@@ -7,20 +7,33 @@
 
 </head>
 <body>
-	<h1>Search for local events in your area!</h1>
-	<form class = "findevents">
-		City:
-		<br><input type="text" name="zip" id ="location">
-		<br>
-		Event type:
-		<br><input type="text" name="event" id ="event">
-	  	<br>
-	  	<input type="submit" class = "submit" value="Submit" name = "submit">
-	  	<br>
+	<form class="splash-page">
+		<h1>About me and this app</h1>
+		<p>Hi, my name is Damian Sopel and I am a 2015 UW-Madison graduate in Statistics though I am looking to transition into the 
+			field of web development. This app is the first basic project I built for Thinkful, the web dev bootcamp from which 
+			I initially learned how to program </p>
+		<p>This application is relatively simple compared to others you may find in my portfolio as it was built when I first started out learning programming. It allows you to search for events going on in your area this week by city and keyword. The program makes an API call to Eventful's servers and returns search results. Only HTML, jQuery, and CSS were used to create this program
+		</p>	
+		<button class="show-app">Enter the Event Search App</button>
+	</form>
+	<form class = "find-events hidden">
+		<h1>Search for local events in your area!</h1>
+			City:
+			<br><input type="text" name="zip" id ="location">
+			<br>
+			Event type:
+			<br><input type="text" name="event" id ="event">
+	  		<br>
+	  		<input type="submit" class = "submit" value="Submit" name = "submit">
+	  		<br>	  		
+		<div class = "container"> 
+			<span id= "ListEvents"> </span>
+		</div>
+		<div class="nav-buttons hidden">
+			<button class="back">Back</button>
+			<button class="next">Next</button>
+		</div>
 	</form> 
-	<div class = "container"> 
-		<span id= "ListEvents"> </span>
-	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://api.eventful.com/js/api"> </script>
 	<script src="js.js"></script>
