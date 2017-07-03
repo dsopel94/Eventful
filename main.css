@@ -3,10 +3,10 @@ body {
 }
 
 h1,html {
-	text-align:center;
-	font-family:"";
+	font-family: Arial;
 	color: grey;
 }
+
 
 html {
 	text-align:center;
@@ -17,7 +17,7 @@ html {
 } 
 
 button, input {
-	border: 1px solid black;
+	border: 2px solid black;
 	font-style: Arial;
 	color: black;
 	background-color: white;
@@ -26,7 +26,7 @@ button, input {
 .line-separator{
 height:1px;
 background:#717171;
-border-bottom:1px solid #313030;
+border-bottom:1px solid black;
 }
 
 input[type=text] {
@@ -38,22 +38,26 @@ input[type=text] {
 
 a {
 	font-size: 16px;
-	font-family: 'Yorkville';
+	font-family: 'Arial';
 	color: grey;
 }
 
 #ListEvents a {
 	font-size: 16px;
-	font-family: 'Yorkville';
+	font-family: 'Arial';
 	color: grey;
 }
 
 .box {
 	margin: 5px 0px 5px 0px;
 	padding: 10px;
-	border: 1px solid blue;
+	border: 1px solid black;
 	width: 500px;
 
+}
+
+a:hover {
+	background-color: beige;
 }
 
 .container {
