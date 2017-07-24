@@ -4,28 +4,29 @@
 <meta charset="UTF-8">
 	<title></title>
 <link rel="stylesheet" href="main.css">
-
+<link href="https://fonts.googleapis.com/css?family=Lato|Arvo" rel="stylesheet"> 
 </head>
 <body>
 	<form class="splash-page">
-		<h1>About me and this app</h1>
-		<p>Hi, my name is Damian Sopel and I am a 2015 UW-Madison graduate in Statistics transitioning into the 
-			field of web development. This app is the first basic project I built for Thinkful, the web dev bootcamp from which 
-			I initially learned how to program </p>
-		<p>This application is relatively simple compared to others you may find in my portfolio as it was built when I first started out learning programming. The main purpose of this app is it allows users to search for events going on in your area this week by a city and state combination and then filter for your specific interests by keywords. When the search button is clicked, an API call is made to Eventful's servers and returns search results. Only HTML, jQuery, and CSS were used to create this program
-		</p>	
+		<h1 class="intro">EventSearch</h1>
+		<h2>Struggling to find something to do this week? We've got you covered.</h2>
+		<h3>How do I get started?</h3>
+		<div class="help">
+			<p>Simply click the button below and on the following screen type in your city and state and event you're interested in. Click search and the results will pop up below!
+			</p>
+		</div>
 		<button class="show-app">Enter the Event Search App</button>
 	</form>
 	<form class = "find-events hidden">
-		<h1>Search for local events in your area!</h1>
-			City:
-			<br><input type="text" name="zip" id ="location">
-			<br>
-			Event type:
-			<br><input type="text" name="event" id ="event">
-	  		<br>
-	  		<input type="submit" class = "submit" value="Submit" name = "submit">
-	  		<br>	  		
+		<h1 class="search-header">Search for local events in your area!</h1>
+			<label for="location">City and State: </label>
+			<input type="text" name="zip" id ="location">
+			
+			<label for="event">Event type: </label>
+			<input type="text" name="event" id ="event">
+	  		
+	  		<input type="submit" class = "submit-btn" value="Submit" name = "submit">
+	  			  		
 		<div class = "container"> 
 			<span id= "ListEvents"> </span>
 		</div>
