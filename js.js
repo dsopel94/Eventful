@@ -32,10 +32,10 @@ function showEvents(e, l) {
         return '<div class="box"><a href=' +
         item.url + '>' +
         item.title + '</a>' +
-        " at the " + item.venue_name +
-        " Start Date and Time: " +
-        item.start_time +
-        '</div>'; 
+        '<div class="venue">Venue:' + item.venue_name +
+        '</div><div class="time"> Start Date and Time: ' +
+        Date.parse(item.start_time) +
+        '</div></div>'; 
       });
 
       $('.back').on('click', function(event) {
@@ -67,10 +67,10 @@ function showEvents(e, l) {
         return '<div class="box"><a href=' +
         item.url + '>' +
         item.title + '</a>' +
-        " at the " + item.venue_name +
-        " Start Date and Time: " +
-        item.start_time +
-        '</div>'; 
+        '<div class="venue">Venue:' + item.venue_name +
+        '</div><div class="time"> Start Date and Time: ' +
+        Date.parse(item.start_time) +
+        '</div></div>'; 
       });
        $("#ListEvents").html(content);
     });    
@@ -99,10 +99,10 @@ function showEvents(e, l) {
         return '<div class="box"><a href=' +
         item.url + '>' +
         item.title + '</a>' +
-        " at the " + item.venue_name +
-        " Start Date and Time: " +
-        item.start_time +
-        '</div>'; 
+        '<div class="venue">Venue:' + item.venue_name +
+        '</div><div class="time"> Start Date and Time: ' +
+        Date.parse(item.start_time) +
+        '</div></div>'; 
       });
        $("#ListEvents").html(content);
     });    
