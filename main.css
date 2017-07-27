@@ -1,10 +1,11 @@
 body {
 	margin: 0px 0px;
 	padding: 0px 0px;
-	background-image: url("https://media.timeout.com/images/102503695/image.jpg");
+	background-image: url('image.jpg');
 	background-size: cover;
 	background-position: top-left;
-	background-repeat: no-repeat center center fixed;
+	background-repeat: no-repeat;
+	background-color:#000;
 	height: 100%;
 	width: 100%;
 	padding: 0px;
@@ -30,12 +31,27 @@ h2, h3 {
 	background:rgba(1,1,1,0.5);
 }
 
+.need-help {
+	width: 40%;
+	margin: 15px auto;
+	padding-bottom: 15px;
+}
+
+.need-help-2 {
+	width: 20%;
+	margin: 15px auto;
+	padding-bottom: 15px;
+}
+
 .search-header {
 	font-size: 30px;
 	font-family: 'Lato', sans-serif;
-	padding-top: 30px;
-	padding-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	margin-bottom: 50px;
+	width: 48%;
+	margin: 15px auto;
+
 }
 
 .intro {
@@ -66,7 +82,9 @@ h3 {
 .help {
 	margin-left: 30%;
 	margin-right: 30%;
+	padding: 5px;
 	font-family: 'Arvo', serif;
+	line-height:1.4em;
 	font-size: 15px;
 	text-align: center;
 	color: white;
@@ -90,7 +108,7 @@ input {
 	margin-top: 136px;
 	position: absolute;
 	margin-left: 650px;
-	border-radius: 16px;
+	font-size: 20px;
   	padding: 10px 10px;
   	background-color: #0D663A;
   	font-family: 'Lato', sans-serif;
@@ -114,6 +132,8 @@ label {
     padding-right:10px;
     font-family: 'Lato', sans-serif;
 	font-size: 15px;
+	margin-top: 15px;
+
 }
 
 input, label {
@@ -146,28 +166,29 @@ a {
 	box-shadow: 5px 5px 5px #888888;
 }
 
-a:hover {
-	background-color: black;
+#ListEvents a:hover {
+	color: black;
 }
 
 .container {
 	width: 550px;
     margin: 0px auto;
     display: block;
-    margin-top: 275px;
+    margin-top: 250px;
 }
 
 .show-app {
   background-color: #0D663A;
   font-size: 16px;
   width: 7%;
-  border-radius: 16px;
+  font-size: 20px;
   padding-bottom: 8px;
   font-family: 'Lato', sans-serif;
   color: white;
   cursor: pointer;
   padding-top: 8px;
-  margin: 0 44%;
+  margin: 0 auto;
+  display:block;
   margin-top: 10px;
   margin-right: 740px;
 }
@@ -194,7 +215,7 @@ a:hover {
 }
 
 .show-app:hover {
-	color: black;
+	color: grey;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
