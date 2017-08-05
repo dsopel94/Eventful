@@ -190,7 +190,6 @@ a {
   margin: 0 auto;
   display:block;
   margin-top: 10px;
-  margin-right: 740px;
 }
 
 .nav-buttons button {
@@ -221,4 +220,15 @@ a {
 
 html .box {
 	text-align: center;
+}
+
+@media(min-width:768){
+
+
+
+}
+@media(min-width:972px;){
+
+
+
 }
