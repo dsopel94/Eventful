@@ -103,20 +103,6 @@ input {
 	position: relative;
 }
 
-.submit-btn {
-	display: block;
-	margin-top: 136px;
-	position: absolute;
-	margin-left: 650px;
-	font-size: 20px;
-  	padding: 10px 10px;
-  	background-color: #0D663A;
-  	font-family: 'Lato', sans-serif;
-  	color: white;
-  	cursor: pointer;
-  	width: 10%;
-}
-
 input[type=text] {
     width: 20%;
     padding: 12px 20px;
@@ -174,7 +160,7 @@ a {
 	width: 550px;
     margin: 0px auto;
     display: block;
-    margin-top: 250px;
+    margin-top: 150px;
 }
 
 .show-app {
