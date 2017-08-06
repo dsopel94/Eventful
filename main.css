@@ -75,6 +75,10 @@ h3 {
 	font-size: 25px;
 }
 
+.submit-btn {
+	display: none;
+}
+
 .hidden {
 	display: none;
 } 
@@ -248,7 +252,7 @@ p {
 }
 
 label {
-    width: 220px;
+    width: 285px;
     clear: left;
     text-align: right;
     padding-right: 10px;
@@ -278,6 +282,26 @@ input[type=text] {
 .nav-buttons {
 	margin: 15px auto;
 	margin-left: 275px;
+}
+
+.submit-btn {
+    display: block;
+    margin-top: 11px;
+    margin-left: 298px;
+    font-size: 20pt;
+    padding: 15 15px;
+    background-color: #0D663A;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    cursor: pointer;
+    width: 16%;
+}
+
+.container {
+    width: 550px;
+    margin: 0px auto;
+    display: block;
+    margin-top: 242px;
 }
 
 }
