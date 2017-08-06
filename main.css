@@ -286,8 +286,7 @@ input[type=text] {
 }
 
 .nav-buttons button {
-    margin-right: 177px;
-    margin-left: -57px;
+	margin-left: 20px;
 }
 
 .submit-btn {
