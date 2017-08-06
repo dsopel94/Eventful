@@ -253,7 +253,7 @@ p {
 }
 
 label {
-    width: 285px;
+    width: 300px;
     clear: left;
     text-align: right;
     padding-right: 10px;
@@ -295,7 +295,7 @@ input[type=text] {
 .submit-btn {
     display: block;
     margin-top: 11px;
-    margin-left: 298px;
+    margin-left: 310px;
     font-size: 20pt;
     padding: 15 15px;
     background-color: #0D663A;
