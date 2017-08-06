@@ -213,7 +213,7 @@ html .box {
 	text-align: center;
 }
 
-@media only screen and (max-device-width:375px){
+@media only screen and (max-device-width:800px){
 .intro {
 	margin: 0 auto;
 	font-size: 40pt;
