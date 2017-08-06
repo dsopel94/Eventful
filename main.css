@@ -284,10 +284,12 @@ input[type=text] {
 .nav-buttons {
 	margin: 15px auto;
 	margin-left: 275px;
+	padding: 15px 15px;
 }
 
 .nav-buttons button {
 	margin-left: 20px;
+	font-size: 20pt;
 }
 
 .submit-btn {
