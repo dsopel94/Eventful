@@ -187,6 +187,7 @@ a {
   display: inline-block;
   background-color: #0D663A;
   margin-top: 20px;
+  margin: 0 auto;
   padding: 15px 30px;
 }
 
@@ -208,13 +209,75 @@ html .box {
 	text-align: center;
 }
 
-@media(min-width:768){
-
-
-
+@media only screen and (max-device-width:375px){
+.intro {
+	margin: 0 auto;
+	font-size: 40pt;
+	width: 45%;
 }
-@media(min-width:972px;){
 
+.need-help {
+	font-size: 25pt;
+}
 
+.need-help-2 {
+	font-size: 25pt;
+	width: 57%;
+}
+
+p {
+    font-size: 18pt;
+    margin: 0 auto;
+    width: 85%;
+    padding: 5px;
+}
+
+.show-app {
+    background-color: #0D663A;
+    font-size: 16px;
+    width: 13%;
+    font-size: 22pt;
+    padding-bottom: 8px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    cursor: pointer;
+    padding-top: 8px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 18px;
+}
+
+label {
+    width: 220px;
+    clear: left;
+    text-align: right;
+    padding-right: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.search-header {
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    width: 70%;
+    margin: 15px auto;
+}
+
+input[type=text] {
+    width: 31%;
+    padding: 18px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.nav-buttons {
+	margin: 15px auto;
+	margin-left: 275px;
+}
 
 }
