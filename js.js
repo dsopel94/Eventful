@@ -27,6 +27,8 @@ function showEvents(e, l) {
  
   EVDB.API.call("/events/search", oArgs, function(oData) {
     if (oData.events === null) {
+
+      //Force a push
           var notFound = '<div class="not-found"> Whoops! Results Not Found. Please check for any spelling errors or try a different keyword</div>'
           $('.nav-buttons').addClass("hidden")
           $("#ListEvents").html(notFound);
