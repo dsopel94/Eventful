@@ -26,9 +26,12 @@ function showEvents(e, l) {
   };
  
   EVDB.API.call("/events/search", oArgs, function(oData) {
-    console.log(oData);
+    if (oData.events === null) {
+          var notFound = '<div class="not-found"> Results Not Found.</div>'
+          $("#ListEvents").html(notFound);
+        }  
       //Get the title for each item
-      var content = oData.events.event.map(function(item) { 
+      var content = oData.events.event.map(function(item) {
         return '<div class="box"><a href=' +
         item.url + '>' +
         item.title + '</a>' +

@@ -213,6 +213,12 @@ html .box {
 	text-align: center;
 }
 
+.not-found {
+	font-size: 20pt;
+	margin: 0 auto;
+	margin-left: 100px;
+}
+
 @media only screen and (max-device-width:800px){
 .intro {
 	margin: 0 auto;
