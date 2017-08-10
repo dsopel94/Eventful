@@ -205,7 +205,8 @@ a {
 }
 
 .nav-buttons {
-	margin-left: 650px;
+	margin-top: 10px;
+	text-align: center;
 }
 
 .show-app:hover {
