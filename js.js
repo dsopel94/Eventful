@@ -1,17 +1,11 @@
 $(document).ready(function() {
-  $('.find-events').submit(function(event) {
+  $('.splash-page').submit(function(event) {
     event.preventDefault();
     var event = $(this).find("input[name='event']").val();
     var location = $(this).find("input[name='zip']").val();
     showEvents(event, location);
   });
 });
-
-$('.show-app').on('click', function(event) {
-  event.preventDefault();
-  $('.splash-page').addClass('hidden')
-  $('.find-events').removeClass('hidden')
-})
 
 function showEvents(e, l) {
 

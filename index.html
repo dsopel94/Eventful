@@ -12,19 +12,21 @@
 		<h2 class="need-help">Struggling to find something to do this week? We've got you covered.</h2>
 		<h3 class="need-help-2">How do I get started?</h3>
 		<div class="help">
-			<p>Simply click the button below and on the following screen type in your city and state and event you're interested in. Click search and the results will pop up below!
+			<p>Simply type in your city, state, and the type of event you're interested in. Hit Submit and your results will show below!  
 			</p>
 		</div>
-		<button class="show-app">Enter</button>
-	</form>
-	<form class = "find-events hidden">
-		<h1 class="search-header">Search for local events in your area!</h1>
+		<div class="search-fields">
 			<label for="location">City and State: </label>
 			<input type="text" name="zip" id ="location">
-			
+			<br />
 			<label for="event">Event type: </label>
 			<input type="text" name="event" id ="event">
-	  		<input type="submit" class = "submit-btn" value="Submit" name = "submit">
+			<br />
+			<div class="submit-container">
+				<button class="submit-btn" type="submit">Submit
+				</button>
+			</div>
+	  	</div>	
 		<div class = "container"> 
 			<span id= "ListEvents"> </span>
 		</div>
@@ -32,7 +34,7 @@
 			<button class="back">Back</button>
 			<button class="next">Next</button>
 		</div>
-	</form> 
+	</form>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://api.eventful.com/js/api"> </script>
 	<script type="text/javascript" src="date.js"></script>

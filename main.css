@@ -23,10 +23,6 @@ h1 {
 	text-align: center;
 }
 
-@media screen {
-
-}
-
 h2, h3 {
 	background:rgba(1,1,1,0.5);
 }
@@ -54,9 +50,34 @@ h2, h3 {
 
 }
 
+label { 
+	display: inline-block;  
+	text-align: right; 
+	width: 40%
+}
+
+.search-fields {
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
 .intro {
 	width: 25%;
 	margin: 10px auto;
+}
+
+.submit-btn {
+    font-size: 15pt;
+    padding: 5px 2px;
+    background-color: #0D663A;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    cursor: pointer;
+    width: 15%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
 }
 
 h2  {
@@ -73,10 +94,6 @@ h3 {
 	color: white;
 	font-family: 'Arvo', serif;
 	font-size: 25px;
-}
-
-.submit-btn {
-	display: none;
 }
 
 .hidden {
@@ -104,7 +121,6 @@ input {
 	font-style: Arial;
 	color: black;
 	background-color: white;
-	position: relative;
 }
 
 input[type=text] {
@@ -112,22 +128,6 @@ input[type=text] {
     padding: 12px 20px;
     margin: 5px 0;
     box-sizing: border-box;
-    display: inline-block;
-}
-
-label {
-    width:600px;
-    clear:left;
-    text-align:right;
-    padding-right:10px;
-    font-family: 'Lato', sans-serif;
-	font-size: 15px;
-	margin-top: 15px;
-
-}
-
-input, label {
-    float:left;
 }
 
 a {
@@ -154,6 +154,9 @@ a {
 	background-color: white;
 	padding: 5px;
 	box-shadow: 5px 5px 5px #888888;
+	display: block;
+	margin: 0 auto;
+	margin-top: 5px;
 }
 
 #ListEvents a:hover {
@@ -161,11 +164,12 @@ a {
 }
 
 .container {
-	width: 550px;
-    margin: 0px auto;
-    display: block;
-    margin-top: 150px;
+	display: block;
+    margin: 0 auto;
+    margin-top: 45px;
+
 }
+
 
 .show-app {
   background-color: #0D663A;
@@ -214,9 +218,11 @@ html .box {
 }
 
 .not-found {
-	font-size: 20pt;
+	font-size: 22pt;
 	margin: 0 auto;
-	margin-left: 100px;
+	text-align: center;
+	font-weight: bolder;
+	color: red;
 }
 
 @media only screen and (max-device-width:800px){
@@ -241,21 +247,6 @@ p {
     margin: 0 auto;
     width: 85%;
     padding: 5px;
-}
-
-.show-app {
-    background-color: #0D663A;
-    font-size: 16px;
-    width: 13%;
-    font-size: 22pt;
-    padding-bottom: 8px;
-    font-family: 'Lato', sans-serif;
-    color: white;
-    cursor: pointer;
-    padding-top: 8px;
-    margin: 0 auto;
-    display: block;
-    margin-top: 18px;
 }
 
 label {
@@ -316,6 +307,10 @@ input[type=text] {
     margin: 0px auto;
     display: block;
     margin-top: 242px;
+}
+
+.search-fields {
+	margin-top: 20px;
 }
 
 }
