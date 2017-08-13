@@ -7,6 +7,14 @@ $(document).ready(function() {
   });
 });
 
+function initialize() {
+
+var input = document.getElementById('location');
+var autocomplete = new google.maps.places.Autocomplete(input);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
 function showEvents(e, l) {
 
   var oArgs = {
