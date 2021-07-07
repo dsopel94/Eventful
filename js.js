@@ -1,3 +1,5 @@
+// NEW API
+
 $(document).ready(function() {
   $('.splash-page').submit(function(event) {
     event.preventDefault();
@@ -26,7 +28,7 @@ function showEvents(e, l) {
     date: "This week",
     page_number: 1
   };
- 
+
   EVDB.API.call("/events/search", oArgs, function(oData) {
     if (oData.events === null) {
 
@@ -34,7 +36,7 @@ function showEvents(e, l) {
           var notFound = '<div class="not-found"> Whoops! Results Not Found. Please check for any spelling errors or try a different keyword</div>'
           $('.nav-buttons').addClass("hidden")
           $("#ListEvents").html(notFound);
-        }  
+        }
       //Get the title for each item
       var content = oData.events.event.map(function(item) {
         return '<div class="box"><a href=' +
@@ -43,7 +45,7 @@ function showEvents(e, l) {
         '<div class="venue">Venue:' + item.venue_name +
         '</div><div class="time"> Start Date and Time: ' +
         Date.parse(item.start_time) +
-        '</div></div>'; 
+        '</div></div>';
       });
 
       $('.back').on('click', function(event) {
@@ -71,19 +73,19 @@ function showEvents(e, l) {
   EVDB.API.call("/events/search", oArgs, function(oData) {
     console.log(oData);
       //Get the title for each item
-      var content = oData.events.event.map(function(item) { 
+      var content = oData.events.event.map(function(item) {
         return '<div class="box"><a href=' +
         item.url + '>' +
         item.title + '</a>' +
         '<div class="venue">Venue:' + item.venue_name +
         '</div><div class="time"> Start Date and Time: ' +
         Date.parse(item.start_time) +
-        '</div></div>'; 
+        '</div></div>';
       });
        $("#ListEvents").html(content);
-    });    
+    });
   }
-  }) 
+  })
       $('.next').on('click', function(event) {
         event.preventDefault();
         var pageNumber = oData.page_number++;
@@ -103,18 +105,18 @@ function showEvents(e, l) {
   EVDB.API.call("/events/search", oArgs, function(oData) {
     console.log(oData);
       //Get the title for each item
-      var content = oData.events.event.map(function(item) { 
+      var content = oData.events.event.map(function(item) {
         return '<div class="box"><a href=' +
         item.url + '>' +
         item.title + '</a>' +
         '<div class="venue">Venue:' + item.venue_name +
         '</div><div class="time"> Start Date and Time: ' +
         Date.parse(item.start_time) +
-        '</div></div>'; 
+        '</div></div>';
       });
        $("#ListEvents").html(content);
-    });    
-  }) 
+    });
+  })
     // Show Data on page
     $("#ListEvents").html(content);
     $('.nav-buttons').removeClass('hidden')
